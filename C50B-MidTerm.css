@@ -1,0 +1,27 @@
+body{
+background-image: url(Asets/annie-spratt-38yKQLL11d8-unsplash\ 2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+color: #ffffff ;
+}
+.tab { text-indent:40px }
+
+.header {
+    padding: 100px;
+    text-align: center;
+    background: #000000;
+    color: white;
+    font-size: 30px;
+  }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row1{ margin-left: auto;
+    margin-right: auto;
+
+  }
+  
