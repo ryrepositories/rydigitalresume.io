@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+<head>
+  
+    <title>CA School Districts</title>
+    <!-- include meta viewport element -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ 
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="assets/css/C50B-MidTerm.css">
+  
+
+  
+  
+  <style>
+    .btn-primary{ background-color:rgb(0, 153, 255)}
+  </style>
+  
+
+
+
+  <!-- =======================================================
+  * Template Name: DevFolio - v2.4.1
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <div class="container">
+       <div class="row r1">
+            <div class="col-xs-12">
+        <header class="header">
+          <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+            <div class="container">
+              <a class="navbar-brand js-scroll" href="#page-top"></a>
+              <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll active" href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                          PROJECTS
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="UFO_Sigthings.html">UFO Sightings</a>
+                        <a class="dropdown-item" href="MappingEarthquakes.html">Mapping Earthquakes</a>
+                        <a class="dropdown-item" href="PlotlyBellyButtonBiodiversity.html">Plotly BellyButton Biodiversity</a>
+                        <a class="dropdown-item" href="MyCreations.html">My Creations</a>
+                        <a class="dropdown-item" href= "CASchoolDistricts.html">California School Districts</a>
+                        </div>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll" href="Credits.html">CREDITS</a>
+                    
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>  
+            </div>
+        </div>
+        <div class="row r2">
+          <div class="col-md-6 col-lg-12">
+          <br>
+          <h1>Interactive California School Districts Map</h1><small>Tools Used</small>
+                <ul>
+                  <li>HTML,</li> 
+                  <li>CSS, </li>
+                  <li>JavaScript, </li>
+                  <li>Visual Studio Code,</li>
+                  <li>Github,</li>
+                  <li>Mapbox</li>
+                  <li>Leaflet</li>
+                  <li>OpenStreets</li>
+              </ul>    
+            </div>     
+        </div>  
+        <!-- end of row 2-->
+        <div class="row r3">
+            <div class="col-xs-12">
+            <figure>
+            <a  href="https://4renginy.github.io/California_School_Distrcits_Map.io/" target= "_blank"> <img style="align-content: center;" src="assets/img/cadistrictpic.JPG"  alt="School Districts" class="img-fluid"/> </a>
+              
+            <br>
+            <figcaption>Please click on the picture to visit original website and interactive futures</figcaption>
+            </figure>
+            </div>
+        </div>
+      <br>
+      
+        
+    
+    <div class="row">
+      <div class="col-xs-12">
+      <h3>Information about the project</h3>
+      <br>
+        <h3>Purpose</h3>
+        <br>
+        <p class="tab">
+          The purpose of this project is to create an interactive map with all K-12 public school districts on 
+          CA map with certain information showing as the user click on it. 
+          I have used district name, enrollment,dropout count, English Learner Counts, Drop Out percentages.... 
+          The geojason file I have pulled from ca.gov site has much more information about the districts and I can 
+          add any of that infromation upon request.
+            </p>
+          Data has been pulled out from following source;
+              <br><a href="https://gis.data.ca.gov/datasets/e9476c422f0842a7a38652aaf4c7597c_0/geoservice?geometry=-129.601%2C36.267%2C-111.331%2C39.305">Click here to see the json data</a>
+           
+          
+          <h3> The Process </h3>
+          <br>
+
+          <p class="tab">
+
+            HTML; setup the page with necessary libraries for leaflett, javaScript connections and css files.
+            CSS; the only setup for the project was height for the map
+            javaScript; 
+            <ul>
+               <li> 1- Created a config file for API key</li>
+              <li>  2- Created backgound layer and any other layer wanted to add to project in our case I added</li>
+                      <br>Layer 1-street view and 
+                      <br>Layer 2-satellite view
+              <li>  3-Created a base layer to hold both maps
+              <li>  4-Created map object with center and zoom level set for default layer</li>
+              <li>  5-Created a schooldata layer</li>
+              <li>  6-Pulled the school data from source </li>
+              <li>  7-Created popups </li>
+              <li>  8-Added all the info to geojason layer</li>
+            
+               <br> 
+              Original idea was to add some markers but since there are over 940 districts the amount of markers
+                was too much so I have decided to leave it out however if requested it could be easily placed.
+                        
+            <!-- Vendor Files-->
+            <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="assets/vendor/jquery/jquery.min.js"></script>
+            <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+            <script src="assets/vendor/php-email-form/validate.js"></script>
+            <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+            <script src="assets/vendor/counterup/jquery.counterup.min.js"></script>
+            <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+            <script src="assets/vendor/typed.js/typed.min.js"></script>
+            <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+            <!-- Template Main JS File -->
+            <script src="assets/js/caschools.js"></script>
+            <script src="assets/js/config.js"></script>
+            </div>
+          </body>
+          </html>
